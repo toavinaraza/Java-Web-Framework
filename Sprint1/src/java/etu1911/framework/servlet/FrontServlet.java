@@ -4,12 +4,14 @@
  */
 package etu1911.framework.servlet;
 
+import etu1911.framework.Mapping;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 
 /**
@@ -20,6 +22,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class FrontServlet extends HttpServlet {
 
 
+    Map<String, Mapping> MappingUrls; 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
